@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html lang="en" dir="rtl">
+<style>
+h6{
+  color:#FFFFFF;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DashBord</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fontstyle.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontiran.css">
+  <script>
+
+function Fun() {
+var x;
+ x=document.getElementById(ids).style. display=" none";	
+}
+</script>
+</head>
+
+
+<body>
+
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler mb-2 bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- sidebar -->
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">ایده های
+                ناب</a>
+              <div class="d-flex justify-content-center align-self-center bottom-border pb-2">
+                <img src="img/3.jpg" alt="" width="40px" height="30px" class="rounded-circle ml-2">
+                <a href="#" class="text-white"><%=name%> </a>
+
+              </div>
+              <ul class="navbar-nav flex-column text-right mt-2">
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 current"><i
+                      class="fas fa-home text-light fa-lg ml-3"></i>داشبورد</a>
+                </li>
+
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-user text-light fa-lg ml-3"></i>پروفایل</a>
+                </li>
+
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-envelope text-light fa-lg ml-3"></i>صندوق ورودی</a>
+                </li>
+
+                <li onClick=" myFunction()" class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-shopping-cart text-light fa-lg ml-3"></i>افراد</a>
+                </li>
+
+                <li id="ids" class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-chart-line text-light fa-lg ml-3"></i>تجزیه و تحلیل</a>
+                </li>
+
+                <li class="nav-item pl-3 dd">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-chart-bar text-light fa-lg ml-3"></i>قسمت ها</a>
+                </li>
+
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-table text-light fa-lg ml-3"></i>دسته بندی ها</a>
+                </li>
+
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-wrench text-light fa-lg ml-3"></i>تنظیمات</a>
+                </li>
+
+                <li class="nav-item pl-3">
+                  <a href="#" class="nav-link text-white p-2 mb-2 sidebar-link"><i
+                      class="fas fa-file-alt text-light fa-lg ml-3"></i>مستندات</a>
+                </li>
+              </ul>
+            </div>
+            <!--end of sidbar -->
+            <!-- top nav -->
+            <div class="col-xl-10 col-lg-9 col-md-8 mr-auto bg-dark fixed-top py-2 top-navbar">
+              <div class="row align-items-center">
+                <div class="col-md-3 text-right mb-0">
+                  <h4 class="text-light">داشبورد</h4>
+                </div>
+                <div class="col-md-6">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control search-input" placeholder="جستجو....">
+                      <button type="button" class="btn btn-light search-button">
+                        <i class="fas fa-search text-danger"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-3">
+                  <ul class="navbar-nav">
+                    <li class="nav-item icon-parent">
+                      <a href="#" class="nav-link">
+                        <i class="fas fa-comment text-muted fa-lg"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item icon-parent">
+                      <a href="#" class="nav-link">
+                        <i class="fas fa-bell text-muted fa-lg "></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-toggle="modal" data-target="#sing-out">
+                        <i class="fas fa-sign-out-alt text-danger fa-lg mr-auto"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end of top nav -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+  </header>
+  <main>
+    <!-- model -->
+    <div class="modal fade" id="sing-out">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">
+              میخواهید خارج شوید؟
+            </h4>
+            <button type="button" class="close mx-0" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body text-right">
+            آیا میخواهید خارج شوید؟؟
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success ml-4 w-50" data-dismiss="modal">خیر</button>
+            <button type="button" class="btn btn-danger w-50" data-dismiss="modal">بله</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of model -->
+
+    <!-- table -->
+    <section style="margin-top: 25px;">
+      <div class="container-fluid">
+        <div class="row mx-0 mb-5">
+          <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+            <div class="row align-items-center">
+              <!-- salary table -->
+              <div class="col-xl-12 col-12 mb-4 mb-xl-0">
+
+                <h3 class="text-muted text-center mb-3">نام کارخانه</h3>
+				<a href="index.html" class="btn btn-info btn-sm"><h4>+</h4></a>
+                <table class="table table-striped bg-light text-center ">
+                  <thead>
+                    <tr class="text-muted">
+                      <th>#</th>
+                      <th>پشتیبانی کننده</th>
+                      <th>نام کالا</th>
+                      <th>تعداد</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>فاطمه محسنی</td>
+                      <td>ماکارانی</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>فاطمه محسنی</td>
+                      <td>رب گوجه</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>محمد محسنی</td>
+                      <td>ماکارانی</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>محمد محسنی</td>
+                      <td>سس مایونز</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td>فاطمه فراهانی</td>
+                      <td>ماکارانی</td>
+                      <td>98</td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <!-- end of salary table -->
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end oftable -->
+   <p id="pElement"></p>
+	  <span></span>
+    <!-- progress/ task list -->
+   
+    <!-- end of activities / quick post -->
+  </main>
+   
+</body>
+	
+</html>
